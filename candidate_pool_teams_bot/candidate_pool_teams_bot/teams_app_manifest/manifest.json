@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "YOUR_MICROSOFT_APP_ID",
+  "packageName": "com.lucidarcadvisors.candidatepoolagent",
+  "developer": {
+    "name": "Lucid Arc Advisors",
+    "websiteUrl": "https://lucidarcadvisors.com",
+    "privacyUrl": "https://lucidarcadvisors.com/privacy",
+    "termsOfUseUrl": "https://lucidarcadvisors.com/terms"
+  },
+  "name": {
+    "short": "Candidate Pool Agent",
+    "full": "Workday Candidate Pool Agent"
+  },
+  "description": {
+    "short": "Load candidates from LinkedIn Recruiter exports into Workday candidate pools.",
+    "full": "Upload your LinkedIn Recruiter export directly in Teams. The agent validates your data, lets you choose a candidate pool, and loads the candidates into Workday automatically — no HR Technology team required."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#0078D4",
+  "bots": [
+    {
+      "botId": "YOUR_MICROSOFT_APP_ID",
+      "scopes": ["personal"],
+      "supportsFiles": true,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": []
+}
